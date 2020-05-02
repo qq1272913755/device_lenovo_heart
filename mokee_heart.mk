@@ -7,14 +7,14 @@
 $(call inherit-product, device/lenovo/heart/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := heart
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo Z5 Pro GT
-PRODUCT_NAME := mk_heart
+PRODUCT_NAME := mokee_heart
 
 BUILD_FINGERPRINT := "Lenovo/heart/heart:10/QKQ1.191014.001/11.5.141_200118:user/release-keys"
 
