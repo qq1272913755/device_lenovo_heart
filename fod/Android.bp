@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo.rc"],
+    name: "mokee.biometrics.fingerprint.inscreen@1.0-service.lenovo",
+    init_rc: ["mokee.biometrics.fingerprint.inscreen@1.0-service.lenovo.rc"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     shared_libs: [
         "libbase",
@@ -27,7 +27,7 @@ cc_binary {
         "liblog",
         "libhwbinder",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.mokee.biometrics.fingerprint.inscreen@1.0",
         "vendor.goodix.extend.service@2.0",
     ],
 }
